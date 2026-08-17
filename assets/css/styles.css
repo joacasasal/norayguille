@@ -376,6 +376,7 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
 }
 
 @media (max-width: 420px) {
+  .hero h1 { display: flex; flex-direction: column; }
   .schedule-layout { padding-inline: 14px; }
   .schedule li { grid-template-columns: 70px 1fr; padding-inline: 8px; }
   .schedule ol::before { left: 78px; }
