@@ -350,8 +350,6 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
   h2 { font-size: 2.35rem; }
   .hero h1 { font-size: 3.8rem; }
   .hero-eyebrow { margin-bottom: 14px; }
-  .hero-meta { flex-direction: column; gap: 5px; padding: 12px 22px; border-radius: 18px; }
-  .hero-meta i { width: 28px; height: 1px; border-radius: 0; }
   .hero-content { transform: translateY(14vh); }
   .story .wrap, .schedule-layout { width: min(100% - 20px, var(--max)); padding: 20px; border-radius: 24px; }
   .framed-photo { width: 92%; margin: auto; }
@@ -378,6 +376,8 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
 }
 
 @media (max-width: 420px) {
+  .hero-meta { flex-direction: column; gap: 5px; padding: 12px 22px; border-radius: 18px; }
+  .hero-meta i { width: 28px; height: 1px; border-radius: 0; }
   .schedule-layout { padding-inline: 14px; }
   .schedule li { grid-template-columns: 70px 1fr; padding-inline: 8px; }
   .schedule ol::before { left: 78px; }
