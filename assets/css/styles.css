@@ -359,9 +359,9 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
   .schedule li::before { left: 85px; }
   .schedule time { font-size: .78rem; }
   .rsvp p { margin-right: 0; }
-  .rsvp-button { display: grid; width: min(100%, 310px); min-width: 0; margin: 12px auto 0; }
+  .rsvp-button { display: grid; width: min(100%, 310px); min-width: 0; margin: 12px auto 0; text-align: center; column-gap: 1rem; }
   .rsvp-grid > div { padding: 24px 18px; border-radius: 24px; }
-  .cc { width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; font-size: .8rem; }
+  .cc { width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; font-size: .8rem; text-align: center; }
   .cc span { min-width: 0; overflow-wrap: anywhere; }
   .contact { min-height: 720px; background-position: 60% center; }
   .contact-grid article { width: min(255px, 82%); height: 175px; padding: 18px 12px; }
