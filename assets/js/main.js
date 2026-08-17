@@ -9,8 +9,8 @@
     return value.replace(/^\+34/, '').replace(/\s/g, '').replace(/(.{3})/g, '$1 ').trim();
   }
 
-  var ibanValue = (config.iban || '').replace(/\s/g, '');
-  var ibanText = document.querySelector('[data-config="iban"]');
+  var ibanValue = (config.cc || '').replace(/\s/g, '');
+  var ibanText = document.querySelector('[data-config="cc"]');
   if (ibanText && ibanValue) {
     ibanText.textContent = 'IBAN: ' + formatIban(ibanValue);
   }
@@ -89,11 +89,11 @@
 
   sections.forEach(function (section) { sectionObserver.observe(section); });
 
-  var iban = document.querySelector('.iban');
-  if (iban && ibanValue) {
-    iban.addEventListener('click', function () {
+  var cc = document.querySelector('.cc');
+  if (cc && ibanValue) {
+    cc.addEventListener('click', function () {
       navigator.clipboard.writeText(ibanValue).then(function () {
-        var label = iban.querySelector('em');
+        var label = cc.querySelector('em');
         label.textContent = 'Copiado';
         window.setTimeout(function () { label.textContent = 'Copiar'; }, 1800);
       });
