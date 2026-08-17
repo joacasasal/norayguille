@@ -146,6 +146,7 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
 .hero-meta { display: inline-flex; align-items: center; gap: 16px; margin-top: 18px; padding: 10px 18px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; background: rgba(35,24,18,.16); font-family: "Gilda Display", Georgia, serif; font-size: clamp(.78rem, 1.5vw, 1rem); letter-spacing: .06em; backdrop-filter: blur(6px); }
 .hero-meta i { width: 4px; height: 4px; border-radius: 50%; background: currentColor; opacity: .75; }
 .scroll-cue { position: absolute; z-index: 1; bottom: 20px; left: 50%; font-size: 2rem; color: white; text-decoration: none; animation: bob 2s infinite; }
+.scroll-cue svg { height: 2rem; }
 @keyframes bob { 50% { transform: translateY(7px); } }
 
 .story { min-height: 760px; display: grid; align-items: center; }
@@ -376,14 +377,14 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
 }
 
 @media (max-width: 420px) {
-  .hero h1 { display: flex; flex-direction: column; }
   .schedule-layout { padding-inline: 14px; }
   .schedule li { grid-template-columns: 70px 1fr; padding-inline: 8px; }
   .schedule ol::before { left: 78px; }
   .schedule li::before { left: 74px; }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 360px) {
+  .hero h1 { display: flex; flex-direction: column; }
   .hero-meta { flex-direction: column; gap: 5px; padding: 12px 22px; border-radius: 18px; }
   .hero-meta i { width: 28px; height: 1px; border-radius: 0; }
 }
