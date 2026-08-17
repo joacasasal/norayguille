@@ -145,7 +145,7 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
 .hero h1 span { font-size: .75em; }
 .hero-meta { display: inline-flex; align-items: center; gap: 16px; margin-top: 18px; padding: 10px 18px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px; background: rgba(35,24,18,.16); font-family: "Gilda Display", Georgia, serif; font-size: clamp(.78rem, 1.5vw, 1rem); letter-spacing: .06em; backdrop-filter: blur(6px); }
 .hero-meta i { width: 4px; height: 4px; border-radius: 50%; background: currentColor; opacity: .75; }
-.scroll-cue { position: absolute; z-index: 1; bottom: 20px; left: 50%; font-size: 2rem; color: white; text-decoration: none; animation: bob 2s infinite; }
+.scroll-cue { position: absolute; z-index: 1; bottom: 20px; font-size: 2rem; color: white; text-decoration: none; animation: bob 2s infinite; }
 .scroll-cue svg { height: 2rem; width: 2rem; color: white; }
 @keyframes bob { 50% { transform: translateY(7px); } }
 
