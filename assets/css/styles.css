@@ -122,7 +122,7 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
 
 .hero {
   position: relative;
-  min-height: 100dvh;
+  min-height: 100svh;
   display: grid;
   place-items: center;
   color: #fff;
