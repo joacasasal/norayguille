@@ -323,7 +323,7 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
   .map-card { border-radius: var(--radius-md); border-top-left-radius: 0; border-top-right-radius: 0; }
   .map-card img { max-height: 300px; }
   .schedule-layout { grid-template-columns: 1fr; }
-  .schedule-photo { width: min(420px, 50%); margin: auto; max-height: 520px; }
+  .schedule-photo { width: min(420px, 80%); margin: auto; max-height: 520px; }
   .transport-grid { gap: 35px; }
   .transport-grid { width: min(540px, 100%); margin: 0 auto; }
   .transport-grid::before { display: none; }
