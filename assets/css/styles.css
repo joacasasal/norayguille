@@ -363,7 +363,7 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
   .rsvp-grid > div { padding: 24px 18px; border-radius: 24px; }
   .cc { width: 100%; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; font-size: .8rem; }
   .cc span { min-width: 0; overflow-wrap: anywhere; }
-  .contact { min-height: 720px; background-position: 53% center; }
+  .contact { min-height: 720px; background-position: 60% center; }
   .contact-grid article { width: min(255px, 82%); height: 175px; padding: 18px 12px; }
   .contact-grid article:first-child { justify-self: start; }
   .contact-grid article:last-child { justify-self: end; }
@@ -376,12 +376,15 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
 }
 
 @media (max-width: 420px) {
-  .hero-meta { flex-direction: column; gap: 5px; padding: 12px 22px; border-radius: 18px; }
-  .hero-meta i { width: 28px; height: 1px; border-radius: 0; }
   .schedule-layout { padding-inline: 14px; }
   .schedule li { grid-template-columns: 70px 1fr; padding-inline: 8px; }
   .schedule ol::before { left: 78px; }
   .schedule li::before { left: 74px; }
+}
+
+@media (max-width: 300px) {
+  .hero-meta { flex-direction: column; gap: 5px; padding: 12px 22px; border-radius: 18px; }
+  .hero-meta i { width: 28px; height: 1px; border-radius: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {
