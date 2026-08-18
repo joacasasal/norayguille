@@ -351,6 +351,7 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
 @media (max-width: 540px) {
   .wrap { width: min(100% - 32px, var(--max)); }
   h2 { font-size: 2.35rem; }
+  .hero { background-position: 55% 0%; }
   .hero h1 { font-size: 3.8rem; }
   .hero-eyebrow { margin-bottom: 14px; }
   .hero-content { transform: translateY(14vh); }
