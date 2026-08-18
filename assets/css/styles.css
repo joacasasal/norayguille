@@ -170,15 +170,15 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
 }
 .story-copy .story-song div {
   cursor: pointer;
-  margin-bottom: .5rem;
 }
 .story-copy .story-song div b {
   display: flex;
   justify-content: center;
-  aling-items: center;
+  /*aling-items: center;*/
 }
 .story-copy .story-song div b svg {
   height: 20px;
+  margin-top: 2px;
   fill: var(--ink);
 }
 .story-flowers-left, .story-flowers-right {
