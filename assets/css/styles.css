@@ -153,6 +153,7 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
 .story { min-height: 760px; display: grid; align-items: center; }
 .story .wrap {
   position: relative;
+  z-index: 2;
   padding: clamp(28px, 5vw, 68px);
   border: 1px solid rgba(188,149,104,.2);
   border-radius: var(--radius-lg);
@@ -164,9 +165,23 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
 .framed-photo img { width: 100%; object-fit: cover; border-radius: 18px 18px 62px 18px; }
 .story-copy { text-align: center; }
 .story-copy p { max-width: 46ch; margin: 0 auto 12px; }
-.story-flowers-left, .story-flowers-right { position: absolute; top: 0; height: 100%; }
-.story-flowers-left { left: -100px; background: url("https://bodanorayguille.com/assets/img/flowers1.png") center cover; }
-.story-flowers-right { right: -100px; background: url("https://bodanorayguille.com/assets/img/flowers2.png") center cover; }
+.story-flowers-left, .story-flowers-right {
+  position: absolute;
+  z-index: 0;
+  height: 50%;
+  width: 30%;
+  background-size: contain;
+  background-position: center;}
+.story-flowers-left {
+  left: -15%;
+  background: url("https://bodanorayguille.com/assets/img/flowers1.png") no-repeat;
+  transform: rotate(45deg);
+}
+.story-flowers-right {
+  right: -15%;
+  background: url("https://bodanorayguille.com/assets/img/flowers2.png") no-repeat;
+  transform: rotate(45deg);
+}
 
 .venue-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; text-align: center; }
 .venue-intro > * { height: 100%; padding: 30px; border: 1px solid rgba(255,248,233,.22); border-radius: var(--radius-md); background: rgba(255,255,255,.07); backdrop-filter: blur(4px); align-content: center; }
