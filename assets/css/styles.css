@@ -165,6 +165,22 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
 .framed-photo img { width: 100%; object-fit: cover; border-radius: 18px 18px 62px 18px; }
 .story-copy { text-align: center; }
 .story-copy p { max-width: 46ch; margin: 0 auto 12px; }
+.story-copy .story-song p {
+  margin-bottom: 0;
+}
+.story-copy .story-song div {
+  cursor: pointer;
+  margin-bottom: .5rem;
+}
+.story-copy .story-song div b {
+  display: flex;
+  justify-content: center;
+  aling-items: center;
+}
+.story-copy .story-song div b svg {
+  height: 20px;
+  fill: var(--ink);
+}
 .story-flowers-left, .story-flowers-right {
   position: absolute;
   z-index: 0;
