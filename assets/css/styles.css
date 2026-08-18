@@ -171,16 +171,18 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
   height: 50%;
   width: 30%;
   background-size: contain;
-  background-position: center;}
+  background-position: center;
+  background-repeat: no-repeat;
+}
 .story-flowers-left {
   left: -15%;
-  background: url("https://bodanorayguille.com/assets/img/flowers1.png") no-repeat;
+  background-image: url("https://bodanorayguille.com/assets/img/flowers1.png");
   transform: rotate(45deg);
 }
 .story-flowers-right {
   right: -15%;
-  background: url("https://bodanorayguille.com/assets/img/flowers2.png") no-repeat;
-  transform: rotate(45deg);
+  background-image: url("https://bodanorayguille.com/assets/img/flowers2.png");
+  transform: rotate(-45deg);
 }
 
 .venue-intro { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; text-align: center; }
@@ -311,6 +313,10 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
 .reveal.visible { opacity: 1; translate: 0 0; }
 .transport-grid .reveal:nth-child(2), .stays-grid .reveal:nth-child(2) { transition-delay: .1s; }
 .transport-grid .reveal:nth-child(3), .stays-grid .reveal:nth-child(3) { transition-delay: .2s; }
+
+@media (max-width: 1200px) {
+  .story-flowers-left, .story-flowers-right { display: none; }
+}
 
 @media (max-width: 1020px) and (min-width: 821px) {
   .menu { gap: 12px; }
