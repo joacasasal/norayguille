@@ -157,7 +157,7 @@ h3 { font-family: "Gilda Display", Garamond, Georgia, serif; font-weight: 400; }
   padding: clamp(28px, 5vw, 68px);
   border: 1px solid rgba(188,149,104,.2);
   border-radius: var(--radius-lg);
-  background: rgba(255,250,239,.48);
+  background: rgba(255,250,239,1);
   box-shadow: var(--shadow-soft);
 }
 .framed-photo { margin: 0; padding: 7px; border: 2px solid var(--earth); background: #fff7e7; box-shadow: 0 12px 35px rgba(86,55,35,.12); transform: rotate(-.8deg); }
