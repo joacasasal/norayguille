@@ -384,6 +384,7 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
   .gifts-section .gifts { text-align: center; }
   .cc { text-align: center; justify-content: center; }
   .cc em { display: none; }
+  .contact-grid { min-height: 100%; }
   .contact-grid article { height: 210px; }
   .contact h3 { width: min-content; margin-inline: auto; }
 }
@@ -410,7 +411,6 @@ footer div b { font-family: "Parisienne", cursive; font-size: 1.55rem; font-weig
   .cc { width: 100%; flex-wrap: wrap; gap: 8px 16px; font-size: .8rem; }
   .cc span { min-width: 0; overflow-wrap: anywhere; }
   .contact { min-height: 720px; background-position: 60% center; }
-  .contact-grid { min-height: 100%; }
   .contact-grid article { width: min(255px, 82%); height: 175px; padding: 18px 12px; }
   .contact-grid article:first-child { justify-self: start; }
   .contact-grid article:last-child { justify-self: end; }
