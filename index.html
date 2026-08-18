@@ -62,10 +62,25 @@
         <div class="story-copy reveal">
           <h2 data-kicker="Nuestra historia">¿Cómo sucedió?</h2>
           <div class="flourish" aria-hidden="true"><span></span>·<span></span></div>
-          <p>El pasado 26 de julio de 2025 en un viaje a Pirineos, al atardecer sonó “Mil razones para ser feliz” de Luís Brea mientras Guille hincaba rodilla...</p>
+          <p>El pasado 26 de julio de 2025 en un viaje a Pirineos, al atardecer sonó <button onclick="playSong()"><b>▶️ “Mil razones para ser feliz” de Luís Brea</b> mientras Guille hincaba rodilla...</p>
           <p>Un pasito más en el compromiso que hemos ido construyendo, día a día, durante todos estos años.</p>
           <p>Porque una boda no cambia una historia; simplemente celebra el camino recorrido y brinda por todo lo que está por venir.</p>
           <p>Nos hace muchísima ilusión compartir ese día con vosotros.</p>
+          <div id="player"></div>
+          <script src="https://www.youtube.com/iframe_api"></script>
+          <script>
+            let player;
+            function onYouTubeIframeAPIReady() {
+              player = new YT.Player("player", {
+                height: "0",
+                width: "0",
+                videoId: "EuMq0R10VQ0"
+              });
+            }
+            function playSong() {
+              player.playVideo();
+            }
+          </script>
         </div>
       </div>
       <div class="story-flowers-right"></div>
